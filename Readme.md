@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Станислав Казанков](https://up.htmlacademy.ru/adaptive/19/user/451965).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
 
 ---
 
