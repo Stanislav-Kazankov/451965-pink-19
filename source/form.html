@@ -8,16 +8,16 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__col">
-          <a class="main-nav__logo mn-logo" href="index.html">
+          <a class="main-nav__logo smpl-logo" href="index.html">
             <span class="visually-hidden">Главная страница этого сайта</span>
-            <svg class="main-nav__logo-svg mn-logo-svg" xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74 23">
+            <svg class="main-nav__logo-svg smpl-logo-svg" xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74 23">
               <title class="visually-hidden">Логотип приложения "Пинк" - надпись "Пинк" заглавными латинскими буквами белого цвета</title>
-              <path class="main-nav__logo-svg mn-logo-svg" fill="#d22856" fill="#283645"/>
+              <path class="main-nav__logo-svg smpl-logo-svg" fill="#d22856" fill="#283645"/>
             </svg>
           </a>
         </div>
         <div class="main-nav__col">
-          <a class="main-nav__toggle btn btn--burger">
+          <a class="main-nav__toggle burger">
         </div>
         <ul class="main-nav__list main-nav-list">
           <li class="main-nav-list__item">
@@ -37,8 +37,8 @@
       </nav>
     </header>
     <main>
-      <header class="form-hdr">
-        <h1 class="form-hdr__h1 h1 h1--white">
+      <header class="hdr">
+        <h1 class="hdr__h1 h1 h1--white">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
       </header>
@@ -46,23 +46,23 @@
         <h2 class="visually-hidden">
           Форма для для участия в конкурсе
         </h2>
-        <p class="form-sect__p p p--dark p--lh30px">
+        <p class="form-sect__p">
           Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
         </p>
         <form class="form-sect__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fldset fldset fldset--white">
+          <fieldset class="form__fldset">
 						<legend class="visually-hidden">ФИО</legend>
-            <label class="form__name-lbl h3 h3--pink h3--lh30px" for="last-name">Фамилия:</label>
+            <label class="form__name-lbl thind-h3 thind-h3--pink" for="last-name">Фамилия:</label>
             <input class="form__fld fld" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" autocomplete="on" required> <!--value=""-->
-            <label class="form__name-lbl h3 h3--pink h3--lh30px" for="frst-name">Имя:</label>
+            <label class="form__name-lbl thind-h3 thind-h3--pink" for="frst-name">Имя:</label>
             <input class="form__fld fld" type="text" name="frst-name" id="frst-name" placeholder="Введите ваше имя *" autocomplete="on" required>
-            <label class="form__name-lbl h3 h3--pink h3--lh30px" for="midl-name">Отчество:</label>
+            <label class="form__name-lbl thind-h3 thind-h3--pink" for="midl-name">Отчество:</label>
             <input class="form__fld fld" type="text" name="midl-name" id="midl-name" placeholder="Ну и отчество тоже" autocomplete="on">
           </fieldset>
-          <fieldset class="form__fldset fldset fldset--grey">
-						<legend class="form__legnd h3 h3--pink h3--lh18px">
+          <fieldset class="form__fldset form__fldset--grey">
+						<legend class="form__legnd midl-h3 midl-h3--pink">
               Ваши безбашенные
               достижения в путешествии
             </legend>
@@ -91,15 +91,15 @@
               Разгромил отель
             </label>
           </fieldset>
-          <fieldset class="form__fldset fldset fldset--white">
+          <fieldset class="form__fldset">
 						<legend class="visually-hidden">Контакты</legend>
-            <label class="form__conts-lbl h3 h3--pink h3--lh30px" for="tel">Номер телефона</label>
+            <label class="form__conts-lbl thind-h3 thind-h3--pink" for="tel">Номер телефона</label>
             <input class="form__fld fld" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" autocomplete="on">
-            <label class="form__conts-lbl h3 h3--pink h3--lh30px" for="email">Адрес почты</label>
+            <label class="form__conts-lbl thind-h3 thind-h3--pink" for="email">Адрес почты</label>
             <input class="form__fld fld" type="email" name="email" id="email" placeholder="Введите почту *" autocomplete="on" required>
           </fieldset>
-          <fieldset class="form__fldset fldset fldset--grey">
-						<legend class="form__legnd h3 h3--pink h3--lh18px">
+          <fieldset class="form__fldset form__fldset--grey">
+						<legend class="form__legnd midl-h3 midl-h3--pink">
               С каким приложением
               путешествовали?
             </legend>
@@ -116,25 +116,25 @@
               Windows Phone
             </label>
           </fieldset>
-          <fieldset class="form__fldset fldset fldset--white">
+          <fieldset class="form__fldset">
 						<legend class="visually-hidden">Эмоции</legend>
-            <label class="form__txt-lbl h3 h3--pink h3--lh30px" for="txt">Опишите свои эмоции</label>
+            <label class="form__txt-lbl thind-h3 thind-h3--pink" for="txt">Опишите свои эмоции</label>
 						<textarea class="form__fld fld fld--txt" name="txt" id="txt"
                       placeholder="Можно прям в красках, не стесняясь в выражениях" autocomplete="on">
             </textarea>
           </fieldset>
-          <button class="form__btn form-btn" type="submit">Отправить форму</button>
+          <button class="form__btn rect-btn" type="submit">Отправить форму</button>
         </form>
-        <span class="form__note h3 h3--pink h3--lh30px">*</span>
-        <span class="form__note h3 h3--dark h3--lh30px"> — обязательные поля</span>
+        <span class="form__note thind-h3 thind-h3--pink">*</span>
+        <span class="form__note thind-h3 thind-h3--dark"> — обязательные поля</span>
       </section>
     </main>
     <footer class="ftr">
-      <a class="ftr__logo ftr-logo" href="index.html">
+      <a class="ftr__logo full-logo" href="index.html">
         <span class="visually-hidden">Главная страница этого сайта</span>
-        <svg class="footer__logo-svg ftr-logo-svg" xmlns="http://www.w3.org/2000/svg" width="146" height="40" viewBox="0 0 146 40">
+        <svg class="footer__logo-svg full-logo-svg" xmlns="http://www.w3.org/2000/svg" width="146" height="40" viewBox="0 0 146 40">
           <title class="visually-hidden">Логотип приложения "Пинк" - розовые очки и надпись "Пинк" заглавными латинскими буквами тёмно-синего цвета</title>
-          <path class="footer__logo-svg ftr-logo-svg" fill="#d22856" fill="#283645"/>
+          <path class="footer__logo-svg full-logo-svg" fill="#d22856" fill="#283645"/>
         </svg>
       </a>
       <ul class="ftr__sites sites">
@@ -167,7 +167,7 @@
         </li>
       </ul>
       <section class="ftr__devpd devpd">
-        <h2 class="ftr__h2 p--dark p--lh18px">Разработано</h2>
+        <h2 class="ftr__h2 rich-p">Разработано</h2>
         <ul class="ftr__devps">
           <li class="devps__item devpr">
             <a class="devps__link devpr-link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -185,16 +185,16 @@
 			<h2 class="visually-hidden">Сообщение об ошибке</h2>
 			<div class="fixed-overl__popup fixed-overl__popup--err popup">
 				<div class="popup-high">
-					<h2 class="popup__h2 h2 h2--black h2--lh24px">
+					<h2 class="popup__h2 midl-h2">
             Что-то пошло не так!
           </h2>
-          <p class="popup__p p p--dark p--lh24px">
+          <p class="popup__p midl-p">
             Проверьте поля, выделенные красным,
             скорее всего вы забыли их заполнить
           </p>
 				</div>
 				<div class="popup-lower">
-					<button class="popup__btn form-btn" type="button">OK</button>
+					<button class="popup__btn rect-btn" type="button">Ok</button>
 				</div>
 			</div>
 		</section>
@@ -202,10 +202,10 @@
 			<h2 class="visually-hidden">Уведомление об успешной отправке заявки</h2>
 			<div class="fixed-overl__popup fixed-overl__popup--ok popup">
 				<div class="popup-high">
-					<h2 class="popup__h2 h2 h2--black h2--lh24px">
+					<h2 class="popup__h2 midl-h2">
             Ваша заявка отправлена
           </h2>
-          <p class="popup__p p p--dark p--lh24px">
+          <p class="popup__p midl-p">
             Спасибо за ваше участие, ваша заявка
             уже поступила к нам. В ближайшее
             время мы рассмотрим ее и
@@ -213,7 +213,7 @@
           </p>
 				</div>
 				<div class="popup-lower popup-lower--ok">
-					<button class="popup__btn form-btn" type="button">Закрыть окно</button>
+					<button class="popup__btn rect-btn" type="button">Закрыть окно</button>
 				</div>
 			</div>
 		</section>

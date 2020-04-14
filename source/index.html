@@ -8,16 +8,16 @@
     <header class="page-hdr">
       <nav class="main-nav">
         <div class="main-nav__col">
-          <div class="main-nav__logo mn-logo">
+          <div class="main-nav__logo smpl-logo">
             <span class="visually-hidden">Главная страница этого сайта</span>
-            <svg class="main-nav__logo-svg mn-logo-svg" xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74 23">
+            <svg class="main-nav__logo-svg smpl-logo-svg" xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74 23">
               <title class="visually-hidden">Логотип приложения "Пинк" - надпись "Пинк" заглавными латинскими буквами белого цвета</title>
-              <path class="main-nav__logo-svg mn-logo-svg" fill="#d22856" fill="#283645"/>
+              <path class="main-nav__logo-svg smpl-logo-svg" fill="#d22856" fill="#283645"/>
             </svg>
           </div>
         </div>
         <div class="main-nav__col">
-          <a class="main-nav__toggle btn btn--burger">
+          <a class="main-nav__toggle burger">
         </div>
         <ul class="main-nav__list main-nav-list">
           <li class="main-nav-list__item">
@@ -25,7 +25,6 @@
           </li>
           <li class="main-nav-list__item">
             <a class="main-nav-list__link" href="photo.html">Фотографии</a>
-          </li>
           </li>
           <li class="main-nav-list__item">
             <a class="main-nav-list__link" href="">Конкурс</a>
@@ -44,8 +43,8 @@
           <span class="downld__slogn h1 h1--white">Взгляните на жизнь иначе</span>
           <!--<img src="https://via.placeholder.com/498x314" width="498" height="314" alt="Рука с мобильным телефоном белого цвета с розовым дисплеем и круглой белой кнопкой">-->
         </div>
-        <a class="dnld__btn oval-btn oval-btn-dnld" href="https://www.apple.com/ru/ios/app-store/">
-          <span class="btn__capt h2 h2-white h2--lh18px">Скачать приложение</span>
+        <a class="dnld__btn oval-btn oval-btn--dnld" href="https://www.apple.com/ru/ios/app-store/">
+          <span class="btn__capt rich-h2 rich-h2--white">Скачать приложение</span>
         </a>
         <ul class="dnld__markts markts">
           <li class="markts__item">
@@ -67,8 +66,8 @@
             </a>
           </li>
         </ul>
-        <p class="dnld__p p p--white p--lh24px">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p><!--Подумать про доступность-->
-      <section>
+        <p class="dnld__p midl-p midl-p--white">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p><!--Подумать про доступность-->
+      </section>
       <section class="funcs">
         <header class="funcs__hdr">
           <h2 class="funcs__h2 h1 h1--dark">
@@ -78,20 +77,20 @@
         </header>
         <div class="linr-grad">
         </div>
-        <h3 class="funcs__h3 h2 h2--black h2--lh24px">Поднимает настроение</h3>
-        <p class="funcs__p p p--dark p--lh24px">
+        <h3 class="funcs__h3 midl-h2">Поднимает настроение</h3>
+        <p class="funcs__p midl-p">
           Приложение позволит вам победить
           осеннюю хандру и депрессию
           буквально в несколько кликов!
         </p>
-        <h3 class="funcs__h3 h2 h2--black h2--lh24px">Меняет мир вокруг</h3>
-        <p class="funcs__p p p--dark p--lh24px">
+        <h3 class="funcs__h3 midl-h2">Меняет мир вокруг</h3>
+        <p class="funcs__p midl-p">
           Сделайте снимок и украсьте его
           смайликом или текстовой подписью,
           чтобы усилить эффект
         </p>
-         <h3 class="funcs__h3 h2 h2--black h2--lh24px">Заводит новых друзей</h3>
-        <p class="funcs__p p p--dark p--lh24px">
+         <h3 class="funcs__h3 midl-h2">Заводит новых друзей</h3>
+        <p class="funcs__p midl-p">
           Ставьте лайки, комментируйте,
           делитесь фотографиями с друзьями и
           заводите новых
@@ -102,11 +101,13 @@
         <ul class="opins__list opin-list">
           <li class="opin-list__item opin">
             <article class="opin-list__artcl opin-artcl">
-              <h3 class="opin-list__h3 h2 h2--black h2--lh30px">
-                <span class="visually-hidden">Отзыв №1. Автор - </span>
-                Николай Петров
-              </h3>
-              <p class="opin-list__p p p--dark p--lh30px">
+              <header>
+                <h3 class="opin-list__title thind-h2">
+                  <span class="visually-hidden">Отзыв №1. Автор - </span>
+                  Николай Петров
+                </h3>
+              </header>
+              <p class="opin-list__text">
                 «Это приложение перевернуло мой мир
                 и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я
@@ -134,34 +135,34 @@
       <section class="tarfs">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="tarfs__table tarf-table">
-          <tr class="tarf-table__tr tr">
-            <th class="tarf-table__th th">
-              <h3 class="tarf-table__h h">База</h3>
-              <span class="tarf-table__price price">1,99 USD</span>
+          <tr class="tarf-table__tr">
+            <th class="tarf-table__th">
+              <h3 class="tarf-table__col-name">База</h3>
+              <span class="tarf-table__price">1,99 USD</span>
             </th>
-            <th class="tarf-table__th th th--hit">
-              <h3 class="tarf-table__h h">Стандарт</h3>
-              <span class="tarf-table__price price">3,99 USD</span>
+            <th class="tarf-table__th tarf-table__th--hit">
+              <h3 class="tarf-table__col-name">Стандарт</h3>
+              <span class="tarf-table__price">3,99 USD</span>
             </th>
-            <th class="tarf-table__th th">
-              <h3 class="tarf-table__h h">Анлим</h3>
-              <span class="tarf-table__price price">9,99 USD</span>
+            <th class="tarf-table__th">
+              <h3 class="tarf-table__col-name">Анлим</h3>
+              <span class="tarf-table__price">9,99 USD</span>
             </th>
           </tr>
           <tr class="tarf-table__tr tr">
-            <td class="tarf-table__td td">Смайлики</td>
-            <td class="tarf-table__td td td--inc">Смайлики</td>
-            <td class="tarf-table__td td">Смайлики</td>
+            <td class="tarf-table__td tarf-table__td--inc">Розовый фильтр</td>
+            <td class="tarf-table__td tarf-table__td--inc">Розовый фильтр</td>
+            <td class="tarf-table__td tarf-table__td--inc">Розовый фильтр</td>
+          </tr>
+          <tr class="tarf-table__tr">
+            <td class="tarf-table__td tarf-table__td--exc">Смайлики</td>
+            <td class="tarf-table__td tarf-table__td--inc">Смайлики</td>
+            <td class="tarf-table__td tarf-table__td--inc">Смайлики</td>
           </tr>
           <tr class="tarf-table__tr tr">
-            <td class="tarf-table__td td td--exc">Розовый фильтр</td>
-            <td class="tarf-table__td td td--inc">Розовый фильтр</td>
-            <td class="tarf-table__td tarf-table-td"></td>
-          </tr>
-          <tr class="tarf-table__tr tr">
-            <td class="tarf-table__td td td--exc">Комментарии</td>
-            <td class="tarf-table__td td td--exc">Комментарии</td>
-            <td class="tarf-table__td td">Комментарии</td>
+            <td class="tarf-table__td tarf-table__td--exc">Комментарии</td>
+            <td class="tarf-table__td tarf-table__td--exc">Комментарии</td>
+            <td class="tarf-table__td tarf-table__td--inc">Комментарии</td>
           </tr>
         </table>
         <div class="tarfs__dots dots">
@@ -180,10 +181,10 @@
         <h2 class="conts__h2 h1 h1--dark">
           Остались вопросы?
           Свяжитесь с нами!
-        <h2>
+        </h2>
         <div class="conts__call-us call-us">
-          <h3 class="conts__h3 h3 h3--dark h3--lhnorm">Звоните:</h3>
-          <p class="conts__p conts-p">
+          <h3 class="conts__h3 rich-h3 rich-h3--dark">Звоните:</h3>
+          <p class="conts__p h1 h1--pink">
             <a class="conts__tel conts-tel" href="tel:+78125556666">
               <span class="visually-hidden">Наш телефон: </span>
               +7 (812) 555-66-66
@@ -191,8 +192,8 @@
           </p>
         </div>
         <div class="conts__write-us write-us">
-          <h3 class="conts__h3 h3 h3--dark h3--lhnorm">Пишите:</h3>
-          <p class="conts__p conts-p">
+          <h3 class="conts__h3 rich-h3 rich-h3--dark">Пишите:</h3>
+          <p class="conts__p h1 h1--pink">
             <a class="conts__email conts-email" href="mailto:mail@htmlacademy.ru">
               <span class="visually-hidden">Наш адрес электронной почты: </span>
               mail@htmlacademy.ru
@@ -200,8 +201,8 @@
           </p>
         </div>
         <div>
-          <h3 class="conts__h3 h3 h3--dark h3--lhnorm">Приезжайте в гости:</h3>
-          <p class="conts__p conts-p">
+          <h3 class="conts__h3 rich-h3 rich-h3--dark">Приезжайте в гости:</h3>
+          <p class="conts__p h1 h1--pink">
             <span class="visually-hidden">Наш адрес: </span>
             ул. Большая
             Конюшенная, 19/8
@@ -211,7 +212,7 @@
         </div>
         <div class="map">
           <h3 class="visually-hidden">Интерактивная карта: </h3>
-          <iframe class="map__iframe iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5335.449076741157!2d30.314773006621525!3d59.939852983536575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1585834619581!5m2!1sru!2sru" width="320" height="200" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <!--style="border:0;"-->
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5335.449076741157!2d30.314773006621525!3d59.939852983536575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1585834619581!5m2!1sru!2sru" width="320" height="200" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <!--style="border:0;"-->
           <img src="https://via.placeholder.com/320x167" width="320" height="167" alt="Наш офис по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </div>
       </section>
