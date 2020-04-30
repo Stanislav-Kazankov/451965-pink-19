@@ -1,0 +1,25 @@
+.main-nav-list {
+  @include list-rset();
+
+  background-color: rgb(35, 51, 67);
+}
+
+.main-nav-list__item {
+  min-height: 64px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav-list__link {
+	display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

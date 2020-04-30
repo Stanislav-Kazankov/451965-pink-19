@@ -1,0 +1,15 @@
+@mixin no-outln() {
+  outline: none;
+  background: transparent;
+  &::before {
+    display: none;
+  }
+}
+
+@mixin list-rset() {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	list-style: none;
+}
