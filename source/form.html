@@ -9,9 +9,9 @@
 		<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-hdr">
       <nav class="main-nav">
-        <div class="main-nav__top">
+        <div class="main-nav__top main-nav__top--open">
           <div class="main-nav__col">
             <a class="main-nav__logo smpl-logo" href="index.html">
               <span class="visually-hidden">Главная страница этого сайта</span>
@@ -22,22 +22,22 @@
             </a>
           </div>
           <div class="main-nav__col">
-            <a class="main-nav__toggle burger">
+            <a class="main-nav__togl">
           </div>
         </div>
         <ul class="main-nav__list main-nav-list">
           <li class="main-nav-list__item">
-            <div class="main-nav-list__link">Главная</div>
+            <a class="main-nav-list__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav-list__item">
             <a class="main-nav-list__link" href="photo.html">Фотографии</a>
           </li>
           </li>
           <li class="main-nav-list__item">
-            <a class="main-nav-list__link" href="">Конкурс</a>
+            <div class="main-nav-list__link" href="">Конкурс</div>
           </li>
           <li class="main-nav-list__item">
-            <a class="main-nav-list__link" href="">Html Academy</a>
+            <a class="main-nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -132,7 +132,7 @@
           <button class="form__btn rect-btn" type="submit">Отправить форму</button>
         </form>
         <span class="form__note thind-h3 thind-h3--pink">*</span>
-        <span class="form__note thind-h3 thind-h3--dark"> — обязательные поля</span>
+        <span class="form__note thind-h3"> — обязательные поля</span>
       </section>
     </main>
     <footer class="ftr">

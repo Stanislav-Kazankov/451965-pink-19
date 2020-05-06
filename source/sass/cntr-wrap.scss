@@ -1,0 +1,6 @@
+@media (min-width: $desct-width) {
+  .cntr-wrap {
+    width: 940px;
+    @include make-cntr();
+  }
+}

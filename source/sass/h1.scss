@@ -1,0 +1,11 @@
+.h1 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+  &--white {
+    color: $white;
+  }
+  &--pink {
+    color: $pink;
+  }
+}
