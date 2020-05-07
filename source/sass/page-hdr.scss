@@ -2,6 +2,14 @@
   background-color: $bg-dark;
   background-position: center top;
   background-repeat: no-repeat;
+  background-size:
+}
+
+@media (max-width: 320px) and (max-resolution: 1dppx) {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+@media (max-width: 320px) and (min-resolution: 1.5dppx) {
   background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
