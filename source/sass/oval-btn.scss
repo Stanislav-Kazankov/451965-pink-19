@@ -1,0 +1,51 @@
+.oval-btn {
+  display: block;
+  width: 280px;
+  min-height: 55px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 36px;
+  padding-right: 35px;
+
+  border-width: 3px;
+  border-style: solid;
+
+  border-radius: 27.5px;
+}
+
+@media (min-width: $tablt-width) {
+  .oval-btn {
+    width: 300px;
+  }
+}
+
+@media (min-width: $deskt-width) {
+  .oval-btn {
+    padding-left: 29px;
+    padding-right: 28px;
+  }
+}
+
+.oval-btn--dnld {
+  border-color: $white;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:hover .oval-btn__capt {
+    color: $pink;
+  }
+
+  &:active {
+    background-color: $white;
+  }
+
+  &:active .oval-btn__capt {
+    color: rgba($lipstick, 0.3);
+  }
+}
+
+.oval-btn__capt {
+  display: block;
+}

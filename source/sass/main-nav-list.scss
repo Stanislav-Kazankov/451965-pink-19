@@ -1,21 +1,19 @@
 .main-nav-list {
   @include make-flex();
   width: 100%;
-  @include rset-list();
 
-  background-color: $bg-dark;
+  background-color: $dark;
 
   overflow: hidden;
 }
 
-@media (min-width: $desct-width) {
+@media (min-width: $deskt-width) {
   .main-nav-list {
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
     width: 703px;
     padding-top: 20px;
-    margin-right: -1px;
 
     background-color: transparent;
   }
@@ -27,7 +25,6 @@
   }
 }
 
-
 .main-nav-list__item {
   width: 100%;
   min-height: 64px;
@@ -36,7 +33,9 @@
   border-bottom: 1px solid #000000;
 }
 
-@media (min-width: $desct-width) {
+
+
+@media (min-width: $deskt-width) {
   .main-nav-list__item {
     @include make-flex();
     justify-content: center;
@@ -95,7 +94,19 @@
   text-align: center;
 }
 
-@media (min-width: $desct-width) {
+@media (max-width: $max-tablt-width) {
+  .main-nav-list__link {
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: rgba($pink, 0.3);
+    }
+  }
+}
+
+@media (min-width: $deskt-width) {
   .main-nav-list__link {
     min-height: 20px;
     padding-top: 0px;
@@ -106,5 +117,13 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: capitalize;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 }

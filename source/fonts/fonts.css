@@ -1,22 +1,3 @@
-
-
-.rich-h2,
-.midl-h2,
-.thind-h2 {
-  font-size: 18px;
-  color: black;
-}
-
-.rich-h2,
 .rich-p {
   line-height: 18px;
-}
-
-.midl-h2,
-.midl-p {
-  line-height: 24px;
-}
-
-.thind-h2 {
-  line-height: 30px;
 }

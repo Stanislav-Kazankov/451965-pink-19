@@ -1,11 +1,23 @@
 .h1 {
   font-weight: 300;
   font-size: 24px;
-  line-height: normal;
+  line-height: 29px;
+
   &--white {
     color: $white;
   }
-  &--pink {
-    color: $pink;
+}
+
+@media (min-width: $tablt-width) and (max-width: $max-tablt-width) {
+  .h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: $deskt-width) {
+  .h1 {
+    font-size: 50px;
+    line-height: 60px;
   }
 }

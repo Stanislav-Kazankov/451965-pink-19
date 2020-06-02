@@ -31,3 +31,49 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@mixin make-flex-col() {
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+
+@mixin make-algn-cntr() {
+  align-content: center;
+  align-items: center;
+}
+
+@mixin make-algn-strc() {
+  align-content: stretch;
+  align-items: stretch;
+}
+
+@mixin make-algn-strt() {
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin make-algn-end() {
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+@mixin make-jstf-strt() {
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+
+@mixin make-jstf-end() {
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
+@mixin make-jstf-sbet() {
+  justify-content: space-between;
+  justify-items: center;
+}
+
+@mixin make-jstf-cntr() {
+  justify-content: center;
+  justify-items: center;
+}
