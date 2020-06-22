@@ -2,19 +2,19 @@
   @include make-flex();
   @include make-flex-col();
   @include make-algn-cntr();
+
   overflow: hidden;
 }
 
 .conts__cntr-wrap {
   @include make-flex();
+  @include make-flex-col();
   @include make-cntr();
   min-height: inherit;
 }
 
 @media (max-width: $max-mobl-width) {
   .conts__cntr-wrap {
-    @include make-flex-col();
-    @include make-algn-cntr();
     width: 280px;
     padding-top: 42px;
     padding-bottom: 16px;
@@ -46,69 +46,43 @@
   }
 }
 
-.conts__h2 {
-  margin-top: 0;
-}
-
-@media (max-width: $max-mobl-width) {
-  .conts__h2 {
-    margin-bottom: 34px;
-  }
-
-  .conts__call-us {
-    width: inherit;
-    margin-bottom: 19px;
-  }
-
-  .conts__write-us {
-    width: inherit;
-    margin-bottom: 22px;
-  }
-
-  .conts__come-to-gsts {
-    width: inherit;
-    margin-bottom: 19px;
-  }
-}
-
-.conts__h3 {
-  width: 195px;
-  margin-top: 0;
-}
-
-@media (max-width: $max-mobl-width) {
-  .conts__h3 {
-    margin-bottom: 3px;
-  }
-
-  .conts__call-us .conts__h3 {
-    margin-bottom: 1px;
-  }
-}
-
-.conts__p {
-  margin-top: 0;
-  margin-bottom: 2px;
-
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: $lipstick;
+.conts__list {
+  @include rset-list();
 }
 
 .conts__map {
+  position: relative;
+
+  width: 100%;
+  background-position: center -445px;
+  background-repeat: no-repeat;
+
   overflow: hidden;
 }
 
 @media (max-width: 320px) {
   .conts__map {
-    width: 100%;
+    background-size: 320px 645px;
+  }
+}
+
+@media (max-width: 320px) and (max-resolution: $usual-dppx) ,
+       (max-width: 320px) and (max-resolution: $usual-dpi) {
+  .conts__map {
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+}
+
+@media (max-width: 320px) and (max-resolution: $usual-dppx) ,
+       (max-width: 320px) and (max-resolution: $usual-dpi) {
+  .conts__map {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 }
 
 @media (max-width: $max-mobl-width) {
   .conts__map {
-    height: 187px;
+    height: 200px;
   }
 }
 
@@ -136,7 +110,30 @@
   }
 }
 
-.conts__iframe {
+@media (max-width: 320px) {
+  .conts__map::before {
+
+  }
+}
+
+.conts__map::after {
+  content: "";
+
+  position: absolute;
+
+  left: calc(50% - 18px);
+  top: calc(50% - 4.5px);
+
+  width: 36px;
+  height: 35px;
+
+  background-position: center center;
+  background-size: 36px 35px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-map-marker.svg");
+}
+
+.cont-list__iframe {
   width: inherit;
   height: inherit;
 
@@ -149,7 +146,7 @@
 
 @media (max-width: 320px) {
   .conts__map-img {
-    margin-top: -143%;
+    margin-top: -445px;
   }
 }
 

@@ -118,6 +118,7 @@ gulp.task("server", function () {
   gulp.watch("source/css/**/normalize.css", gulp.series("nrmz"));
   gulp.watch("source/sass/**/*.scss", gulp.series("css", "refresh"));
   gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
+  gulp.watch("source/js/**/*.{png,jpg,svg}", gulp.series("images", "refresh"));
   gulp.watch("source/img/{icon,logo}-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
@@ -128,6 +129,7 @@ gulp.task("build", gulp.series(
   "nrmz",
   "css",
   "js",
+  "images",
   "sprite",
   "html"
 ));
